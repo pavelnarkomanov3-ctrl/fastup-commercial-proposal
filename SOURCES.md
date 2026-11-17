@@ -13,7 +13,7 @@
 
 ## Материалы бренда
 
-Локальные файлы в `assets/` загружены с сайта FastUp:
+Локальные файлы в корне проекта загружены с сайта FastUp:
 
 - `fastup-logo.svg`: https://fastup.by/wp-content/uploads/2026/08/fastup-logo-1.svg
 - `Inter-Variable.woff2`: https://fastup.by/wp-content/themes/fastup-v2/fonts/Inter-Variable.woff2

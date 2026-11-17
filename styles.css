@@ -1,5 +1,5 @@
-@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url('./assets/Inter-Variable.woff2') format('woff2')}
-@font-face{font-family:'Golos Text';font-style:normal;font-weight:400 900;font-display:swap;src:url('./assets/GolosText-Variable.woff2') format('woff2')}
+@font-face{font-family:Inter;font-style:normal;font-weight:100 900;font-display:swap;src:url('./Inter-Variable.woff2') format('woff2')}
+@font-face{font-family:'Golos Text';font-style:normal;font-weight:400 900;font-display:swap;src:url('./GolosText-Variable.woff2') format('woff2')}
 :root{--bg:#f8fafc;--paper:#fff;--ink:#334155;--muted:#64748b;--blue:#0369a1;--blue-dark:#075985;--blue-light:#f0f9ff;--line:#e2e8f0;--radius:24px;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}
 *{box-sizing:border-box}
 body{margin:0;line-height:1.65}
