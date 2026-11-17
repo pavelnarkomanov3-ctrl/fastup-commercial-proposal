@@ -1,0 +1,6 @@
+{
+  "name": "fastup-proposal",
+  "private": true,
+  "type": "module",
+  "scripts": {"test": "node --test tests.mjs", "start": "python3 -m http.server 8765 --bind 127.0.0.1"}
+}

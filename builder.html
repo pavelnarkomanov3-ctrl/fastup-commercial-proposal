@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Конструктор КП — FastUp</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/fastup-logo.svg">
+  <link rel="preload" href="./assets/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./builder.js"></script>
+</head>
+<body data-page="builder">
+  <div class="builder-wrap">
+    <header class="topbar"><a class="brand" href="https://fastup.by/" aria-label="FastUp — основной сайт"><img src="./assets/fastup-logo.svg" width="36" height="36" alt=""><span>FastUp<span class="brand-domain">.by</span></span></a><span class="top-note">Для команды FastUp</span></header>
+    <main>
+      <div class="builder-heading"><div><p class="eyebrow">Коммерческое предложение</p><h1>Конструктор предложения</h1><p class="muted">Компания → услуги → предпросмотр → ссылка клиенту.</p></div></div>
+      <div class="builder-layout">
+        <section class="editor panel" aria-labelledby="form-title">
+          <form id="builder-form">
+            <div class="client-fields">
+            <h2 id="form-title">Параметры предложения</h2>
+            <label class="field-label" for="client">01 <span>Название компании</span></label>
+            <input id="client" name="client" type="text" placeholder="Например, Город и Ромашки" autocomplete="organization" required disabled aria-describedby="client-help">
+            <p class="help" id="client-help">Появится в заголовке предложения.</p>
+            </div>
+            <div class="services-panel">
+            <fieldset id="services-fieldset" disabled><legend class="field-label">02 <span>Услуги для клиента</span></legend><p class="help">Карточки идут в порядке выбора.</p><div id="service-options" tabindex="0" role="group" aria-label="Список услуг"><p role="status">Загружаем услуги…</p></div></fieldset>
+            </div>
+            <div class="share-block"><label class="field-label" for="share-url">03 <span>Ссылка на предложение</span></label><input id="share-url" type="url" readonly placeholder="Заполните компанию и выберите услуги"><button class="button" type="button" id="copy" disabled>Скопировать ссылку <span aria-hidden="true">↗</span></button><p id="builder-status" class="help" role="status" aria-live="polite">Укажите компанию и выберите хотя бы одну услугу.</p></div>
+          </form>
+        </section>
+        <section class="preview-panel" aria-labelledby="preview-title"><div class="preview-toolbar"><div><span class="live-dot" aria-hidden="true"></span><h2 id="preview-title">Предпросмотр клиента</h2></div><a id="open-preview" target="_blank" rel="noopener" hidden>Открыть отдельно ↗</a></div><div id="preview-empty" class="preview-empty"><span class="preview-symbol" aria-hidden="true">↗</span><h3>Предложение начинается здесь</h3><p>Добавьте название компании и услуги.<br>Здесь появится готовое КП.</p></div><iframe id="preview" title="Коммерческое предложение для клиента" hidden></iframe></section>
+      </div>
+    </main>
+    <footer class="builder-footer">FastUp · Условия и цены загружаются из общего справочника.</footer>
+    <noscript><p class="state">Для работы конструктора включите JavaScript.</p></noscript>
+  </div>
+</body>
+</html>
